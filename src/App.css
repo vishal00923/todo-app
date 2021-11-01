@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+/*====================== GOOGLE FONT =============================*/
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+/*====================== CSS RESET ==============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Cute Font', cursive;
+    background-image: linear-gradient(to right, #0fbcf9 50%, #0059ff 100%);
+    max-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header h1 {
+    font-size: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+    margin-top: 1.4rem;
 }
