@@ -11,11 +11,13 @@
 }
 
 .todo-box input {
-    width: 20rem;
-    padding: 0.8rem;
+    width: 24rem;
+    padding: 1.2rem;
     border: none;
     font-family: 'Consolas';
+    font-size: 1.2rem;
     font-weight: 600;
+    box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.2);
 }
 
 .todo-box input:focus {
@@ -29,7 +31,7 @@
 .todo-btn {
     position: absolute;
     right: 0;
-    padding: 0.7rem;
+    padding: 1.2rem;
     cursor: pointer;
     background: rgb(255, 255, 255);
     border: none;
@@ -42,12 +44,7 @@
 
 .fa-plus {
     color: #0fbcf9;
-    font-size: 1rem;
-}
-
-.filter-todo {
-    padding: 0.8rem;
-    border: none;
+    font-size: 1.2rem;
 }
 
 /*======================== CUSTOM SELECTOR ================================*/
@@ -65,13 +62,17 @@ select {
     margin-right: 2rem;
     position: relative;
     overflow: hidden;
+    box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.2);
 }
 
 .filter-todo {
-    cursor: pointer;
-    width: 10rem;
+    width: 12rem;
+    padding: 1.2rem;
+    border: none;
     font-family: 'Consolas';
+    font-size: 1.2rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .select-box::after {
@@ -79,6 +80,49 @@ select {
     color: #0fbcf9;
     position: absolute;
     right: 0;
-    padding: 0.7rem;
+    padding: 1.4rem;
     cursor: pointer;
+}
+
+/*=========================== MEDIA QUERIES ==========================*/
+@media screen and (max-width: 665px) {
+    .todo-form {
+        margin-bottom: 1.2rem;
+    }
+
+    .todo-form__container {
+        margin-top: 0.4rem;
+        row-gap: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-box input {
+        width: 16rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .todo-btn {
+        padding: 0.8rem;
+    }
+
+    .fa-plus {
+        font-size: 0.8rem;
+    }
+
+    .filter-todo {
+        width: 10rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .select-box {
+        margin-right: 0.4rem;
+    }
+
+    .select-box::after {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
 }

@@ -10,18 +10,22 @@
 
 body {
     font-family: 'Cute Font', cursive;
-    background-image: linear-gradient(to right, #0fbcf9 50%, #0059ff 100%);
+    background: #0fbcf9;
     max-height: 100vh;
-}
-
-.app {
-    text-align: center;
 }
 
 header h1 {
     font-size: 6rem;
+    text-align: center;
 }
 
 header {
     margin-top: 1.4rem;
+}
+
+/*=========================== MEDIA QUERIES ==========================*/
+@media screen and (max-width: 665px) {
+    header h1 {
+        font-size: 4rem;
+    }
 }

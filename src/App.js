@@ -45,7 +45,7 @@ const App = () => {
     };
 
     return (
-        <div className="app">
+        <div>
             <header>
                 <h1>Todo List</h1>
             </header>
