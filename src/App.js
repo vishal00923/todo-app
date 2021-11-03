@@ -50,7 +50,7 @@ const App = () => {
                 <h1>Todo List</h1>
             </header>
             <Form inputText={inputText} setInputText={setInputText} todos={todos} setTodos={setTodos} setStatus={setStatus} />
-            <TodoList setTodos={setTodos} filteredTodos={filteredTodos} todos={todos} />
+            <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos} />
         </div>
     );
 };

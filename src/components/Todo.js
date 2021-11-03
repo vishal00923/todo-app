@@ -20,7 +20,7 @@ const Todo = (props) => {
 
     return (
         <div className="todo">
-            <li className={`todo-item ${props.todo.completed ? 'completed' : ''}`}>{props.text}</li>
+            <li className={`${props.todo.completed ? 'completed' : ''}`}>{props.text}</li>
             <div className="todo-btn__box">
                 <button className="complete-btn" onClick={completeHandler}>
                     <i className="fas fa-check"></i>
