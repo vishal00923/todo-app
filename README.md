@@ -2,13 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Todo-List App
+## Todo App With CRUD Operations...
 
-<img src="app-preview.png" width="60%" height="60%" />
+<img src="app-preview.jpg" width="60%" height="60%" />
 
 ## Try It
 
-https://todo-list-app-vishal00923.netlify.app/
+https://todo-app-vishal00923.netlify.app/
 
 ## Install
 
