@@ -8,6 +8,7 @@
     background-color: rgb(255, 251, 0);
     box-shadow: 10px 5px 20px -1px rgba(0, 0, 0, 0.56);
     border-radius: 8px;
+    overflow: auto;
 
     .title {
         font-size: 2.5rem;
@@ -15,4 +16,21 @@
         margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
+}
+
+/*=========================== Custom Scrollbar =====================*/
+.container::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+.container::-webkit-scrollbar-button {
+    height: 8rem;
+}
+
+.container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #bc4e9b;
+    -webkit-border-radius: 0.5rem;
+    box-shadow: inset 0 0 6px #bc4e9b;
+    border-radius: 0.5rem;
+    background-color: #bc4e9b;
 }

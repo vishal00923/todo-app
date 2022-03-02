@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.5rem;
 
     #todo {
         width: 312px;
@@ -16,7 +17,7 @@
         font-size: 1.2rem;
     }
 
-    .add-btn {
+    .btn {
         display: inline-block;
         text-align: center;
         font-family: 'Lobster', cursive;
