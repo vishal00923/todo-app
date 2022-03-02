@@ -37,7 +37,7 @@ const TodoForm = ({ todo, setTodo, todos, setTodos, editTodo, setEditTodo }) => 
     return (
         <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="todo">
-                <input className="todo" id="todo" type="text" placeholder="Enter a Todo..." value={todo} onChange={handleChange} />
+                <input className="todo" id="todo" type="text" placeholder="Enter a Todo..." value={todo} onChange={handleChange} required />
             </label>
             <button className="btn" type="submit">
                 {editTodo ? 'Update' : 'Add'}
