@@ -54,9 +54,69 @@
     }
 }
 
-/*============================== Media Queries ==============================*/
+/*============================== Media Queries =====================*/
 
-@media screen and (max-width: 652px) {
+/* Tablets [601px -> 1200px] */
+@media screen and (max-width: 1200px) {
+    .todos-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0.5rem 0;
+
+            .todo-input {
+                width: 312px;
+                height: 40px;
+                padding: 0.85rem 1.5rem;
+                border: 2px solid #000;
+                border-radius: 8px;
+                margin-left: 3.2rem;
+            }
+
+            .complete {
+                opacity: 0.85;
+                text-decoration: line-through;
+                text-decoration-color: rgb(123, 255, 0);
+                text-decoration-thickness: 4px;
+            }
+
+            [value] {
+                font-family: 'Lobster', cursive;
+                font-size: 1.2rem;
+            }
+
+            .buttons-container {
+                margin-left: 1.5rem;
+
+                .todo-btn {
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 0.95rem;
+                    color: #fff;
+                    background-color: #8355c7;
+                    border-radius: 50%;
+                    padding: 0.65rem 0.75rem;
+                    margin: 0.2rem;
+                    transition: all 0.3s ease-in;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #a981e6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Big smartphones [426px -> 600px] */
+@media screen and (max-width: 600px) {
     .todos-container {
         .list-item {
             margin: 0.475rem 0;
@@ -84,6 +144,40 @@
                     font-size: 0.85rem;
                     border-radius: 4px;
                     padding: 0.475rem 0.575rem;
+                }
+            }
+        }
+    }
+}
+
+/* Small smartphones [325px -> 425px] */
+@media screen and (max-width: 425px) {
+    .todos-container {
+        .list-item {
+            margin: 0.375rem 0;
+
+            .todo-input {
+                width: 112px;
+                height: 18px;
+                padding: 0.375rem 0.475rem;
+                border-radius: 2px;
+            }
+
+            .complete {
+                text-decoration-thickness: 1.5px;
+            }
+
+            [value] {
+                font-size: 0.725rem;
+            }
+
+            .buttons-container {
+                margin-left: 0.725rem;
+
+                .todo-btn {
+                    font-size: 0.675rem;
+                    border-radius: 2px;
+                    padding: 0.395rem 0.495rem;
                 }
             }
         }

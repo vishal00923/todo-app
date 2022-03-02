@@ -38,7 +38,49 @@
 
 /*=========================== Media Queries ==================*/
 
-@media screen and (max-width: 652px) {
+/* Tablets [601px -> 1200px] */
+@media screen and (max-width: 1200px) {
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+        #todo {
+            width: 312px;
+            height: 40px;
+            padding: 0.85rem 1.5rem;
+            border: 2px solid #000;
+            border-radius: 8px;
+        }
+
+        [placeholder] {
+            font-family: 'Lobster', cursive;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #8355c7;
+            border-radius: 8px;
+            padding: 0.85rem 1.5rem;
+            margin-left: 1.5rem;
+            transition: all 0.3s ease-in;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #a981e6;
+            }
+        }
+    }
+}
+
+/* Big smartphones [426px -> 600px] */
+@media screen and (max-width: 600px) {
     .form {
         #todo {
             width: 212px;
@@ -56,6 +98,28 @@
             font-size: 0.975rem;
             border-radius: 4px;
             padding: 0.475rem 0.575rem;
+        }
+    }
+}
+
+/* Small smartphones [325px -> 425px] */
+@media screen and (max-width: 425px) {
+    .form {
+        #todo {
+            width: 112px;
+            height: 18px;
+            padding: 0.375rem 0.475rem;
+            border-radius: 2px;
+        }
+
+        [placeholder] {
+            font-size: 0.725rem;
+        }
+
+        .btn {
+            font-size: 0.725rem;
+            border-radius: 2px;
+            padding: 0.375rem 0.475rem;
         }
     }
 }

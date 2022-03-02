@@ -36,9 +36,51 @@
     background-color: #bc4e9b;
 }
 
-/*===================== Media Queries ============*/
+/*===================== Media Queries =====================*/
 
-@media screen and (max-width: 652px) {
+/* Tablets [601px -> 1200px] */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 720px;
+        height: 720px;
+        margin: 4.5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 251, 0);
+        box-shadow: 10px 5px 20px -1px rgba(0, 0, 0, 0.56);
+        border-radius: 8px;
+        overflow: auto;
+
+        .title {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            text-decoration: underline;
+        }
+    }
+
+    /*=========================== Custom Scrollbar =====================*/
+    .container::-webkit-scrollbar {
+        width: 0.35rem;
+    }
+
+    .container::-webkit-scrollbar-button {
+        height: 8rem;
+    }
+
+    .container::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px #bc4e9b;
+        -webkit-border-radius: 0.5rem;
+        box-shadow: inset 0 0 6px #bc4e9b;
+        border-radius: 0.5rem;
+        background-color: #bc4e9b;
+    }
+}
+
+/* Big smartphones [426px -> 600px] */
+@media screen and (max-width: 600px) {
     .container {
         max-width: 520px;
         height: 720px;
@@ -56,6 +98,29 @@
 
         &::-webkit-scrollbar-button {
             height: 5.175rem;
+        }
+    }
+}
+
+/* Small smartphones [325px -> 425px] */
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 320px;
+        height: 520px;
+        border-radius: 2px;
+
+        .title {
+            font-size: 0.875rem;
+            margin-top: 0.475rem;
+            margin-bottom: 0.272rem;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0.172rem;
+        }
+
+        &::-webkit-scrollbar-button {
+            height: 4.175rem;
         }
     }
 }
