@@ -53,3 +53,39 @@
         }
     }
 }
+
+/*============================== Media Queries ==============================*/
+
+@media screen and (max-width: 652px) {
+    .todos-container {
+        .list-item {
+            margin: 0.475rem 0;
+
+            .todo-input {
+                width: 212px;
+                height: 24px;
+                padding: 0.475rem 0.575rem;
+                border: 0.875px solid #000;
+                border-radius: 4px;
+            }
+
+            .complete {
+                text-decoration-thickness: 2px;
+            }
+
+            [value] {
+                font-size: 0.975rem;
+            }
+
+            .buttons-container {
+                margin-left: 0.975rem;
+
+                .todo-btn {
+                    font-size: 0.85rem;
+                    border-radius: 4px;
+                    padding: 0.475rem 0.575rem;
+                }
+            }
+        }
+    }
+}

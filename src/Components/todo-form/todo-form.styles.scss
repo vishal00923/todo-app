@@ -35,3 +35,27 @@
         }
     }
 }
+
+/*=========================== Media Queries ==================*/
+
+@media screen and (max-width: 652px) {
+    .form {
+        #todo {
+            width: 212px;
+            height: 24px;
+            padding: 0.475rem 0.575rem;
+            border: 0.875px solid #000;
+            border-radius: 4px;
+        }
+
+        [placeholder] {
+            font-size: 0.975rem;
+        }
+
+        .btn {
+            font-size: 0.975rem;
+            border-radius: 4px;
+            padding: 0.475rem 0.575rem;
+        }
+    }
+}

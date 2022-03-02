@@ -35,3 +35,27 @@
     border-radius: 0.5rem;
     background-color: #bc4e9b;
 }
+
+/*===================== Media Queries ============*/
+
+@media screen and (max-width: 652px) {
+    .container {
+        max-width: 520px;
+        height: 720px;
+        border-radius: 4px;
+
+        .title {
+            font-size: 1.2rem;
+            margin-top: 0.575rem;
+            margin-bottom: 0.275rem;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0.175rem;
+        }
+
+        &::-webkit-scrollbar-button {
+            height: 5.175rem;
+        }
+    }
+}
