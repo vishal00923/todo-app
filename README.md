@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Todo App With CRUD Operations...
 
-<img src="app-preview.jpg" width="60%" height="60%" />
+<img src="https://i.ibb.co/3hrmTgT/Screenshot-2023-01-06-205018.png" alt="Preview" border="0">
 
 ## Try It
 
