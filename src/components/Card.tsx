@@ -1,26 +1,49 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { EllipsisHorizontalIcon } from '@heroicons/react/24/solid';
 
 export const Card = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <div className='flex flex-col space-y-6 rounded-md bg-[#fff9de] px-3 py-5 shadow-md'>
       <div className='flex flex-col space-y-3'>
         <div className='flex justify-between'>
           <h2 className='text-[22px] font-[500]'>The first task title</h2>
-          <div className=''>
-            <motion.button whileTap={{ scale: 0.5 }}>
+          <div>
+            <motion.button
+              whileTap={{ scale: 0.5 }}
+              onClick={() => setIsOpen(true)}
+            >
               <EllipsisHorizontalIcon className='h-7 w-7' color='#000' />
             </motion.button>
-            <div className='relative'>
-              <ul className='absolute -top-3 right-0 flex flex-col space-y-5 rounded-lg bg-white px-5 py-3 shadow-lg'>
-                <li className='w-full cursor-pointer hover:bg-slate-500'>
-                  Edit...
-                </li>
-                <li className='cursor-pointer hover:bg-slate-500'>Delete</li>
-              </ul>
-            </div>
+
+            {isOpen && (
+              <>
+                <div
+                  onClick={() => setIsOpen(false)}
+                  className='fixed inset-0 h-full w-full'
+                />
+                <div className='relative z-10'>
+                  <ul className='absolute -top-3 right-0 flex w-[180px] flex-col rounded-md bg-white shadow-lg'>
+                    <li
+                      onClick={() => setIsOpen(false)}
+                      className='cursor-pointer px-5 py-3 hover:bg-slate-300'
+                    >
+                      Edit...
+                    </li>
+                    <li
+                      onClick={() => setIsOpen(false)}
+                      className='cursor-pointer px-5 py-3 hover:bg-slate-300'
+                    >
+                      Delete
+                    </li>
+                  </ul>
+                </div>
+              </>
+            )}
           </div>
         </div>
         <p className='text-[#69665c]'>

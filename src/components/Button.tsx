@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
 
-motion;
-
 type ButtonProps = {
   label: string;
 };
