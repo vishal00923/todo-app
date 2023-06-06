@@ -1,7 +1,13 @@
+'use client';
+
+import { useState } from 'react';
 import { Metadata } from 'next';
 import { Signika } from 'next/font/google';
 
+import { Nav } from '@/components/Nav';
+import { Todo } from '@/components/Todo';
 import { NodeType } from '@/types';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -16,9 +22,20 @@ const signika = Signika({
 });
 
 const RootLayout = ({ children }: NodeType) => {
+  const [plusIconClicked, setPlusIconClicked] = useState<boolean>(false);
+
   return (
     <html lang='en'>
-      <body className={signika.className}>{children}</body>
+      <body className={signika.className}>
+        {plusIconClicked ? (
+          <Todo setPlusIconClicked={setPlusIconClicked} />
+        ) : (
+          <>
+            <Nav setPlusIconClicked={setPlusIconClicked} />
+            {children}
+          </>
+        )}
+      </body>
     </html>
   );
 };
